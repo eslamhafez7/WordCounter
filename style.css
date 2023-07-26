@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --a-color: #6554AF;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: #2B2730;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+textarea {
+    width: 300px;
+    height: 180px;
+    font-size: 17px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    outline: none;
+    border-radius: 6px 6px 0 0;
+    resize: none;
+    transition: 0.2s;
+}
+textarea:focus {
+    border-color: #222;
+}
+.count-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -2px;
+    z-index: -1;
+}
+.count-container p {
+    background-color: var(--a-color);
+    color: #fff;
+    min-width: 100px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 0 0 6px 6px;
+}
+.count-container p span {
+    font-size: 30px;
+}
